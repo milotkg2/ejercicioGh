@@ -18,3 +18,19 @@ print(f"NOMBRE:\t\t{nombre.upper}\nRUT:\t\t{rut}\nCORREO:\t\t{correo.upper}\nTEL
 
 
 
+
+import os
+import time
+os.system("cls")
+
+cantidad = int(input("ingrese cantidad de notas "))
+contadorNota = 0
+for x in range(cantidad):
+    nota = float(input(f"ingrese nota {x+1}\n"))
+    contadorNota = contadorNota+nota
+    print(f"de momento llevo sumado {contadorNota}")
+    time.sleep(4)
+    promedio = contadorNota/cantidad    
+print(f"segun la {cantidad} de notas, tu promedio es {promedio}")
+
+
