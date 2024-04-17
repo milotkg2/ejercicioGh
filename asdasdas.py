@@ -34,3 +34,27 @@ for x in range(cantidad):
 print(f"segun la {cantidad} de notas, tu promedio es {promedio}")
 
 
+
+totalIngresos=0
+x=True
+while x:
+    try:
+        pasajes=int(input("cuántos pasajes deseas vender\n"))
+        if pasajes>0:
+            x=False
+        else:
+           print("solo numeros enteros positivo") 
+    except:
+        print("solo numeros enteros positivo")
+    
+for x in range(pasajes): 
+    try:
+        precio=int(input(f"ingrese el precio del pasajes {x+1}\n"))
+        totalIngresos=totalIngresos+precio
+    except:
+        print("only lukas men...")
+        break
+
+if totalIngresos>0:        
+    print(f"para {pasajes} pasajes, el valor a pagar es: ${totalIngresos}")
+
