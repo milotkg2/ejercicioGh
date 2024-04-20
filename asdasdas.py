@@ -58,3 +58,54 @@ for x in range(pasajes):
 if totalIngresos>0:        
     print(f"para {pasajes} pasajes, el valor a pagar es: ${totalIngresos}")
 
+#for i in range(5):
+#    print(i)
+
+#for i in "hola:":
+#    print(i)
+
+#for i in range(5):
+#    i=i+2
+#    print(i)
+    
+# num = int(input("ingresa un numero \n"))
+# factorial  = 1
+# for x in range(1,num):
+#     factorial=factorial*(num)
+#     num=num-1
+# print(f"la factorial de {x+1} es: {factorial}")
+
+# while True:
+#     num = int(input("ingrese un valor numerico impar\n"))
+#     if num%2 != 0:
+#         print(f"el numero {num} es impar y mutiplicado por 4 es {num*4}")
+#         break
+#     else:
+#         print("!Error¡ ingrese un valor impar")
+        
+# num = int(input("ingrese un valor\n"))
+# expo = int(input("ingrese el exponente\n"))
+# potencia=1
+# for x in range(expo):
+#     potencia=potencia*num
+# print(f"El resultado de la potencia de base {num} y exponente {expo} es: {potencia}.")
+
+x=True
+aux=0
+while x:
+    num=int(input("ingrese un valor entero positivo\n"))
+    if num>0:
+        for n in range(1, num):
+            if num%n == 0:
+                aux=aux+1 
+                print("aux")      
+        if aux==2:
+            print("el numero es primo") 
+            x=False
+        else:
+            print("el numero no es primo")
+            x=False  
+    else:
+        print("ERROR")       
+
+
