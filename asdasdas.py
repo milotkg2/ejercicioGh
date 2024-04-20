@@ -96,9 +96,10 @@ while x:
     num=int(input("ingrese un valor entero positivo\n"))
     if num>0:
         for n in range(1, num):
-            if num%n == 0:
+            if num%n == 0 or num/n==0:
                 aux=aux+1 
-                print("aux")      
+            if num%n == 0 or num/n==1:
+                aux=aux+1    
         if aux==2:
             print("el numero es primo") 
             x=False
@@ -107,5 +108,3 @@ while x:
             x=False  
     else:
         print("ERROR")       
-
-
