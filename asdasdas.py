@@ -107,4 +107,71 @@ while x:
             print("el numero no es primo")
             x=False  
     else:
-        print("ERROR")       
+        print("ERROR")  
+
+
+# a=True
+# b=True
+# c=False
+# d=True
+# e=False
+# print(a or b)
+# print(a or c)
+# print(a and e)
+# print((a or e)and b)
+# print((a or e) and c)
+# print((a or e) and (c or b))
+# print(((a and b) and c) or e)
+usuario1=None
+usuario2=None
+usuario3=None
+contraseña1=None
+contraseña2=None
+contraseña3=None
+while True:
+    
+    print("MENU")
+    print("(1) Iniciar sesion")
+    print("(2) Registrar usuario")
+    print("(3) Salir\n")
+    opc = input("ingrese una opcion\n")
+    
+    if opc == "1":
+        if usuario1 or usuario2 or usuario3 == None:
+            print("") 
+            print("Debe registrar un usuario\n")
+        else:
+            while True:
+                for x in range(3):
+                    usuario=input("ingrese usuario")
+                    if usuario == usuario1:
+                        for x in range(3):
+                            contraseña=input("ingrese contraseña")
+                            if contraseña == contraseña1:
+                                print("inicio correcto")               
+                    else:
+                        print("usuario incorrecto")   
+    elif opc == "2":
+        if usuario1 == None:
+            usuario1=input("ingrese nombre de usuario 1\n")
+            contraseña1=input("ingrese contraseña\n")
+        if usuario2 and usuario1 == None:
+            usuario2=input("ingrese nombre de usuario 2\n")
+            contraseña2=input("ingrese contraseña\n")
+        if usuario3 and usuario2 == None:
+            usuario3=input("ingrese nombre de usuario 3\n")
+            contraseña3=input("ingrese contraseña\n")
+        if usuario1 and usuario2 and usuario3 != None:
+            print("") 
+            print("No se pueden creear mas usuarios\n")
+    
+    elif opc == "3":
+        print("CERRANDO")
+        break
+   
+    else:
+        print("OPCION NO VALIDA")
+    
+    
+    
+    
